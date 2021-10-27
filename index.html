@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sass on Traversy Media</title>
+</head>
+<body>
+    <header class="showcase">
+        <div class="container">
+            <nav>
+                <div class="theme">
+                    <!-- <h1 class="dark"><a href="#"><i class="fas fa-moon"></i></a></h1> -->
+                    <h1 class="light"><a href="#"><span class="theme-name"><i class="fas fa-sun"></i></span></a></h1>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+    
+            <div class="showcase-content">
+                <div>
+                    <h1>Make Your Marketing Real</h1>
+                    <p class="my-1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                        eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
+                        vitae dolore.
+                    </p>
+                    <!-- <p class="my-5">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                        eligendi tempore atque laborum. Quisquam nemo at non. Corrupti,
+                        vitae dolore.
+                    </p> -->
+                    <a href="#" class="btn-primary">Learn More</a>
+                    <a href="#" class="btn-secondary">Sign Up</a>
+                </div>
+                <img
+                    src="https://themesbrand.com/zooki/layouts/images/home-2-img.png"
+                />
+            </div>
+        </div>
+    </header>
+    <script>
+        let lightButton = document.querySelector('.light');
+        let themeName = document.querySelector('.theme-name');
+        // let currentTheme = document.documentElement.classList.contains('<i class="fas fa-sun"></i>') ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>
+
+        lightButton.addEventListener('click', () => {
+
+            document.documentElement.classList.toggle('light-mode');
+                    
+            // themeName.innerText = <i class="fas fa-moon"></i>;
+            
+            // currentTheme = currentTheme === <i class="fas fa-sun"></i> ? <i class="fas fa-moon"></i> : <i class="fas fa-sun"></i>;
+            // document.documentElement.classList.add(currentTheme);
+            
+            // themeName.innerText = currentTheme;
+        })
+    </script>
+</body>
+</html>

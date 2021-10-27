@@ -1,0 +1,18 @@
+// Margin & padding classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} { // top and bottom only
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} { // top and bottom only
+        padding: #{$space}rem 0;
+    }
+}
